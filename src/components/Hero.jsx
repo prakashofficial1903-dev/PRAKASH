@@ -1,4 +1,4 @@
-import { ArrowDown, ArrowUpRight, Sparkles } from 'lucide-react';
+import { ArrowDown, ArrowUpRight, Code2, MonitorSmartphone, Sparkles } from 'lucide-react';
 import { portfolioData } from '../data/portfolioData.js';
 
 export default function Hero() {
@@ -11,11 +11,11 @@ export default function Hero() {
         </div>
         <p className="hero-greeting">Hey, I&apos;m {portfolioData.name} <span>✳</span></p>
         <h1>
-          Making the web
+          Digital ideas,
           <br />
-          feel a little more
+          built to make
           <br />
-          <span className="highlight">human.</span>
+          <span className="highlight">an impact.</span>
         </h1>
         <p className="hero-description">{portfolioData.intro}</p>
         <div className="hero-actions">
@@ -28,17 +28,32 @@ export default function Hero() {
         </div>
       </div>
       <div className="hero-visual">
-        <div className="portrait-frame">
-          <img src={portfolioData.portrait} alt={`${portfolioData.name}, ${portfolioData.role}`} />
+        <div className="hero-preview" aria-label="A preview of a digital website design">
+          <div className="preview-toolbar">
+            <div className="preview-window-dots" aria-hidden="true"><i /><i /><i /></div>
+            <span>yournextbigidea.com</span>
+            <MonitorSmartphone size={16} aria-hidden="true" />
+          </div>
+          <div className="preview-content">
+            <span className="preview-kicker">GOOD IDEAS DESERVE GREAT DESIGN</span>
+            <strong>Make your<br />next move.</strong>
+            <span className="preview-button">Let&apos;s get started <ArrowUpRight size={14} /></span>
+            <div className="preview-orbit preview-orbit--one" aria-hidden="true" />
+            <div className="preview-orbit preview-orbit--two" aria-hidden="true" />
+          </div>
+          <div className="preview-footer">
+            <span><Code2 size={15} /> Built for people</span>
+            <span>01 — 04</span>
+          </div>
         </div>
         <div className="portrait-label">
           <Sparkles size={16} />
-          <span>Good things take curiosity.</span>
+          <span>Designed to make a difference.</span>
         </div>
         <div className="hero-sticker" aria-hidden="true">
-          <span>DESIGN</span>
-          <span>WITH</span>
-          <span>FEELING</span>
+          <span>THINK</span>
+          <span>MAKE</span>
+          <span>GROW</span>
           <span className="sticker-star">✳</span>
         </div>
         <span className="hero-scribble" aria-hidden="true">✳</span>

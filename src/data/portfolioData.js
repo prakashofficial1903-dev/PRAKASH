@@ -1,5 +1,5 @@
 export const portfolioData = {
-  name: 'Your Name',
+  name: 'Prakash Mehta',
   role: 'Creative developer',
   location: 'Based in India · Available worldwide',
   email: 'hello@example.com',
