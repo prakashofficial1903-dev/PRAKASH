@@ -1,4 +1,4 @@
-import { ArrowDown, ArrowUpRight, Code2, MonitorSmartphone, Sparkles } from 'lucide-react';
+import { ArrowDown, ArrowUpRight, Sparkles } from 'lucide-react';
 import { portfolioData } from '../data/portfolioData.js';
 
 export default function Hero() {
@@ -28,23 +28,8 @@ export default function Hero() {
         </div>
       </div>
       <div className="hero-visual">
-        <div className="hero-preview" aria-label="A preview of a digital website design">
-          <div className="preview-toolbar">
-            <div className="preview-window-dots" aria-hidden="true"><i /><i /><i /></div>
-            <span>yournextbigidea.com</span>
-            <MonitorSmartphone size={16} aria-hidden="true" />
-          </div>
-          <div className="preview-content">
-            <span className="preview-kicker">GOOD IDEAS DESERVE GREAT DESIGN</span>
-            <strong>Make your<br />next move.</strong>
-            <span className="preview-button">Let&apos;s get started <ArrowUpRight size={14} /></span>
-            <div className="preview-orbit preview-orbit--one" aria-hidden="true" />
-            <div className="preview-orbit preview-orbit--two" aria-hidden="true" />
-          </div>
-          <div className="preview-footer">
-            <span><Code2 size={15} /> Built for people</span>
-            <span>01 — 04</span>
-          </div>
+        <div className="hero-portrait">
+          <img src={portfolioData.portrait} alt={`${portfolioData.name} holding a laptop`} />
         </div>
         <div className="portrait-label">
           <Sparkles size={16} />

@@ -9,8 +9,7 @@ export const portfolioData = {
     "I'm a developer who cares about the little details — the smooth interaction, the clear message, the moment a product just clicks. I partner with people and teams to turn ambitious ideas into useful, human-centered experiences.",
   yearsExperience: '03+',
   projectsCompleted: '12',
-  portrait:
-    'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1000&q=85',
+  portrait: '/images/prakash-mehta.png',
   socialLinks: [
     { label: 'GitHub', href: 'https://github.com/' },
     { label: 'LinkedIn', href: 'https://www.linkedin.com/' },
